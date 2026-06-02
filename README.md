@@ -1,16 +1,31 @@
-# A template for a NIME Hosting Proposal
+# An example NIME Hosting Proposal
 
-This repo contains a template for proposing NIME conferences. A markdown version of the template is in the file `proposal-template.md` and a `.docx` version is available attached to each release of the repo.
+**📄 Read the proposal online: <http://smcclab.au/nime2025-proposal-example/>**
 
-The template is divided into two sections: part 1 covers basic details for what a NIME could look like and part 2 includes more details about the organising committee and budget.
+This repo contains a **worked example** of a NIME conference hosting proposal — a real, filled-in proposal rather than the blank form. Where the NIME proposal template gives you the empty structure to complete, this repo shows what a completed submission can look like, so prospective hosts have a concrete reference to write against.
 
-Part 1 is designed to take only a short amount of time to fill in and can be used as a basis for early feedback with the NIME board. Part 2 would take some more serious thinking, quotes for different aspects of production.
+The proposal is published automatically as a website (the link above) via GitHub Pages on every push to `main`. The markdown source is in `nime2025-proposal-public.md`, and `.html` and `.docx` versions are attached to each [release](../../releases) of the repo.
 
-## How to use the template
+The proposal is divided into two sections: part 1 covers basic details for what a NIME could look like, and part 2 includes more details about the organising committee and budget.
 
-Open the markdown or docx file and start filling in details.
+Part 1 is designed to take only a short amount of time to fill in and can be used as a basis for early feedback with the NIME board. Part 2 would take some more serious thinking, including quotes for different aspects of production.
 
-Instructions and template text are provided in _italics_.
+## How to use this example
+
+Read the proposal [online](http://smcclab.au/nime2025-proposal-example/) or open the markdown/docx file to see how each section can be addressed. Use it alongside the template as a guide when drafting your own proposal.
+
+In the template, instructions and placeholder text are provided in _italics_.
+
+## Building locally
+
+The site and documents are produced with [pandoc](https://pandoc.org/) via the `Makefile`:
+
+```sh
+make site   # build build/site/index.html + media/ (the website)
+make html   # build a standalone .html
+make docx   # build a .docx
+make pdf    # build a .pdf (requires xelatex)
+```
 
 ## Proposal Components
 
