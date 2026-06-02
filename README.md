@@ -2,7 +2,7 @@
 
 **📄 Read the proposal online: <http://smcclab.au/nime2025-proposal-example/>**
 
-This repo contains a **worked example** of a NIME conference hosting proposal — a real, filled-in proposal rather than the blank form. Where the NIME proposal template gives you the empty structure to complete, this repo shows what a completed submission can look like, so prospective hosts have a concrete reference to write against.
+This repo contains a **worked example** of a NIME conference hosting proposal — a real, filled-in proposal rather than the blank form. Where the [NIME proposal template](https://github.com/NIME-conference/nime-hosting-proposal-template) gives you the empty structure to complete, this repo shows what a completed submission can look like, so prospective hosts have a concrete reference to write against.
 
 The proposal is published automatically as a website (the link above) via GitHub Pages on every push to `main`. The markdown source is in `nime2025-proposal-public.md`, and `.html` and `.docx` versions are attached to each [release](../../releases) of the repo.
 
