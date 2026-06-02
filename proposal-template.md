@@ -8,7 +8,7 @@ This document represents an early version of what NIME2025 was going to look lik
 
 A few items were removed from this version of the proposal, for instance, the proposed chair line up changed due to availability, biographies have been removed, and a reflections on the budget model from 2023 was removed as they were out of date with current expectations.
 
-The main purpose of publishing this proposal is to assist future NIME organisers in planning their version of the conference, not to dictate all aspects of how NIME should be organised.
+The main purpose of publishing this proposal is to assist future NIME organisers in planning their version of the conference, not to dictate all aspects of how NIME should be organised. Future organisers should look at the new [proposal template](https://github.com/NIME-conference/nime-hosting-proposal-template) for help in structuring a proposal.
 
 ## Introduction
 
