@@ -1,0 +1,38 @@
+name: Build Proposal Documents
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: pandoc/core:3.8
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build documents
+        run: |
+          mkdir -p build
+          pandoc proposal-template.md -o build/proposal-template.html --standalone
+          pandoc proposal-template.md -o build/proposal-template.docx
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: proposal-documents
+          path: |
+            build/proposal-template.html
+            build/proposal-template.docx
+
+      - name: Attach to release
+        if: github.event_name == 'release'
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            build/proposal-template.html
+            build/proposal-template.docx
